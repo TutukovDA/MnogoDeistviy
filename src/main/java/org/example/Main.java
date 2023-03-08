@@ -9,12 +9,17 @@ public class Main {
         System.out.print("Vvedite vtoroe chislo: ");
         int num2 = in.nextInt();
 
-        System.out.println(num1+"X"+num2+"="+num1*num2);
+        System.out.println(num1 + "X" + num2 + "=" + num1 * num2);
 
-        System.out.println(num1+"-"+num1+"="+(num1-num2));
+        System.out.println(num1 + "-" + num1 + "=" + (num1 - num2));
 
-        System.out.println(num1+"+"+num2+"="+(num1+num2));
+        System.out.println(num1 + "+" + num2 + "=" + (num1 + num2));
 
-        System.out.println(num1 + "/" + num2 + "=" +(num1/num2)+ " ostatok "+(num1 % num2));
+        int b = (num1 % num2);
+
+        if (b > 0) {
+            System.out.println(num1 + "/" + num2 + "=" + (num1 / num2) + " ostatok " + (num1 % num2));
+        }
+        System.out.println(num1 + "/" + num2 + "=" + (num1 / num2));
     }
 }
